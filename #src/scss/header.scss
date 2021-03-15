@@ -1,0 +1,107 @@
+.header{
+    max-width: 1404px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.header__inner{
+    padding: 75px 0 65px;
+    background: url(../img/header-bg.jpg) no-repeat top right 33%;
+    background-size: contain;
+}
+.play__button{
+    position: absolute;
+    top: 43%;
+    right: 40%;
+    cursor: pointer;
+}
+.burger{
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5% 10% 10% 5%;
+    background-color: rgba(0, 0, 0, 0.253);
+    z-index: 100;
+   
+    span{
+        display: block;
+        margin: 0 auto;
+        height: 3px;
+        width: 30px;
+        background-color: $light;
+        border-radius: 2px;
+        margin-bottom: 7px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+.header__title{
+    margin-top: 392px;
+    margin-left: 70px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 54px;
+    font-weight: 900;
+    color:$primary;
+
+    mark{
+        background-color: $accent;
+        color: #fff;
+    }
+
+}
+
+@media (max-width:1150px){
+    .header__title{
+        margin-left: 0;
+    }
+}
+@media (max-width:991px){
+    .header__title{
+        display: block;
+        margin-top: 300px;
+        width: 30%;
+        border-radius: 5% 10% 10% 5%;
+        color: #fff;
+        font-size: 45px;
+        background-color: rgba(0, 0, 0, 0.274);
+    }
+}
+@media (max-width:768px ){
+    .burger{
+        display: block;
+    }
+    .header__logo{
+        padding: 5px;
+        padding-left: 20px;
+        background-color: rgba(255, 255, 255, 0.445);
+        border-radius: 5% 10% 10% 5%;
+    }
+    .header__title{
+        font-size: 37px;
+    }
+
+    .play__button{
+        top: 43%;
+        right: 50%;
+    }
+}
+@media (max-width:480px){
+    .header__title{
+        margin-top: 200px;
+        font-size: 33px;
+        padding-left: 20px;
+    }
+    .burger{
+        right: 0;
+        top: 10px;
+    }
+    .play__button{
+        top: 40%;
+        right: 45%;
+    }
+
+}
